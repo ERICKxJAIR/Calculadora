@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default function App() {
   const buttons = [
@@ -77,10 +77,10 @@ export default function App() {
                   {
                     backgroundColor:
                       button === '=' ||
-                      typeof button === 'number' ||
-                      button === 'LIMPAR' ||
-                      button === '.' ||
-                      button === '+/-'
+                        typeof button === 'number' ||
+                        button === 'LIMPAR' ||
+                        button === '.' ||
+                        button === '+/-'
                         ? 'blue'
                         : 'blue',
                   },
@@ -92,12 +92,12 @@ export default function App() {
                     {
                       color:
                         button === 'DEL' ||
-                        button === 'LIMPAR' ||
-                        button === '%' ||
-                        button === '/' ||
-                        button === '*' ||
-                        button === '-' ||
-                        button === '+'
+                          button === 'LIMPAR' ||
+                          button === '%' ||
+                          button === '/' ||
+                          button === '*' ||
+                          button === '-' ||
+                          button === '+'
                           ? 'black'
                           : 'white',
                       fontSize: 30,
@@ -117,7 +117,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    backgroundColor: 'darkblue',
   },
   results: {
     flex: 2,
